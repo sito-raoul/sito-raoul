@@ -1,9 +1,14 @@
 ---
-title: "enim ultricies dolore metus ac eiusmod interdum"
-date: 2018-05-18
-tags: ["eu fames", "notes", "pharetra"]
-categories: ["facilisi odio", "id"]
-description: "posuere ultricies ornare ligula augue do aliquam vitae erat labore ipsum nibh"
+title: enim ultricies dolore metus ac eiusmod interdum ciao
+date: 2018-05-18T00:00:00.000Z
+tags:
+  - eu fames
+  - notes
+  - pharetra
+categories:
+  - facilisi odio
+  - id
+description: posuere ultricies ornare ligula augue do aliquam vitae erat labore ipsum nibh
 draft: false
 ---
 
