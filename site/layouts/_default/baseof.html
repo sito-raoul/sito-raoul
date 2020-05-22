@@ -1,17 +1,11 @@
-<!doctype html>
-<html lang="{{ $.Site.Language.Lang }}">
-  {{ partial "head" . }}
-  <body class="sans-serif">
-
-    {{ block "header" . }}{{ partial "nav" . }}{{end}}
-
-    {{ block "main" . }}{{ end }}
-
-    {{ block "footer" . }}{{ partial "footer" . }}{{end}}
-
-    {{ $script := .Site.Data.webpack.main }}
-    {{ with $script.js }}
-      <script src="{{ relURL . }}"></script>
-    {{ end }}
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+  {{- partial "head.html" . -}}
+  <body style="min-height: 100vh;">
+    {{- partial "header.html" . -}}
+    <main id="content" {{if not .IsHome }} style="margin-top: 80px;" {{ end }}>
+      {{- block "main" . }}{{- end }}
+    </main>
+    {{ if not .IsHome }} {{- partial "footer.html" . -}} {{ end }}
   </body>
 </html>
