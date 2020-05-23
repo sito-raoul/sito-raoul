@@ -15,6 +15,56 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Intro Blurb", name: "description", widget: "text"}
       - {label: "Image", name: "image", widget: "image", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
+  - name: "editoriali" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Editoriali" # Used in the UI, ie.: "New Post"
+    folder: "site/content/editoriali" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Intro Blurb", name: "description", widget: "text"}
+      - {label: "Image", name: "image", widget: "image", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "rassegna_stampa" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Rassegna Stampa" # Used in the UI, ie.: "New Post"
+    folder: "site/content/dicono_di_me" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Intro Blurb", name: "description", widget: "text"}
+      - {label: "Image", name: "image", widget: "image", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "stuff_i_like" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Stuff i like" # Used in the UI, ie.: "New Post"
+    folder: "site/content/stuff_i_like" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Intro Blurb", name: "description", widget: "text"}
+      - {label: "Image", name: "image", widget: "image", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}ù
+  - name: "conference_materials_pics" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Conference materials & pics" # Used in the UI, ie.: "New Post"
+    folder: "site/content/conference_materials_pics" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Intro Blurb", name: "description", widget: "text"}
+      - {label: "Image", name: "image", widget: "image", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "my_topics_of_interest" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "My topics of interest" # Used in the UI, ie.: "New Post"
+    folder: "site/content/topics" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Intro Blurb", name: "description", widget: "text"}
+      - {label: "Image", name: "image", widget: "image", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}                          
   - name: "pages"
     label: "Pages"
     files:
