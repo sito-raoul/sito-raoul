@@ -1,4 +1,4 @@
 ---
-title: "Poems"
+title: "Stuff i like"
 weight: 30
 ---
